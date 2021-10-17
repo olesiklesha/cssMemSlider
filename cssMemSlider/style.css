@@ -59,7 +59,7 @@
 }
 
 .texts {
-  padding-left: 20px;
+  margin-left: 20px;
   width: 60%;
   display: flex;
   grid-area: left;
@@ -77,6 +77,8 @@
   grid-area: nav;
   display: flex;
   height: 25px;
+  justify-self: last baseline;
+  margin-right: 20px;
 }
 
 input[name="radio-input"] {
