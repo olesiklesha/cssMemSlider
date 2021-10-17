@@ -6,7 +6,7 @@
 body {
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .slider-wrapper {
@@ -14,8 +14,8 @@ body {
   margin-top: 5%;
   width: 55vw;
   height: 75vh;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 1.5rem;
+  border-radius: 1rem;
   background-color: rgba(102, 151, 135, 0.589);
   transition: all .3s ease-in-out
 }
@@ -25,9 +25,8 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 70% 18% 1px 1px 1px 1px;
-  /* grid-template-areas: 'slides slides' 'left nav'; */
-  grid-row-gap: 20px;
+  grid-template-rows: 70% 18%;
+  grid-row-gap: 1.2rem;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -40,7 +39,6 @@ body {
 }
 
 .slides {
-  /* grid-area: slides; */
   display: flex;
   width: 400%;
   height: 100%;
@@ -54,13 +52,13 @@ body {
 
 .slide {
   width: 25%;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 1rem;
 }
 
 .texts-container {
@@ -69,10 +67,9 @@ body {
 }
 
 .texts {
-  margin-left: 20px;
+  margin-left: 1.2rem;
   width: 60%;
   display: flex;
-  /* grid-area: left; */
   overflow: hidden;
   box-sizing: border-box;
   grid-row-start: 2;
@@ -90,9 +87,9 @@ body {
 .navigation {
   /* grid-area: nav; */
   display: flex;
-  height: 25px;
+  height: 2rem;
   justify-self: flex-end;
-  margin-right: 20px;
+  margin-right: 1.2rem;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -100,22 +97,19 @@ body {
 }
 
 input[name="radio-input"] {
-  visibility: hidden;
-  margin-left: -4px;
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
 .bullet {
-  padding: 5px;
+  padding: 0.3rem;
   cursor: pointer;
 }
 
 .bullet-visual {
   display: block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid rgb(77, 132, 168);
+  width: 1rem;
+  height: 1rem;
+  border: 0.15rem solid rgb(77, 132, 168);
   background-color:  rgb(77, 132, 168);
   border-radius: 50%;
   box-sizing: border-box;
@@ -134,16 +128,14 @@ input[name="radio-input"] {
 #radio1:checked ~ .slides {
   margin-left: 0;
 }
+
 #radio1:checked ~ .texts .text {
   transform: translateX(0%);
 }
+
 #radio1:checked ~ .navigation .b1 {
   background-color: transparent;
 }
-
-/* #radio1:checked .b1 {
-  background-color: transparent;
-} */
 
 #radio2:checked ~ .slides {
   margin-left: -100%;
@@ -152,19 +144,19 @@ input[name="radio-input"] {
 #radio2:checked ~ .texts .text {
   transform: translateX(-100%);
 }
+
 #radio2:checked ~ .navigation .b2 {
   background-color: transparent;
 }
-/* #radio2:checked ~ .navigation > .b2  {
-  background-color: red;
-} */
 
 #radio3:checked ~ .slides {
   margin-left: -200%;
 }
+
 #radio3:checked ~ .texts .text {
   transform: translateX(-200%);
 }
+
 #radio3:checked ~ .navigation .b3 {
   background-color: transparent;
 }
@@ -172,9 +164,11 @@ input[name="radio-input"] {
 #radio4:checked ~ .slides {
   margin-left: -300%;
 }
+
 #radio4:checked ~ .texts .text {
   transform: translateX(-300%);
 }
+
 #radio4:checked ~ .navigation .b4 {
   background-color: transparent;
 }
@@ -197,13 +191,13 @@ input[name="radio-input"] {
   .slider-wrapper {
     width: 90vw;
     height: 90vh;
-    padding: 10px;
+    padding: 0.5rem;
   }
 
   .slider {
     /* grid-template-areas: 'slides' 'nav' 'left'; */
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 5% 20% 1px 1px 1px 1px;
+    grid-template-rows: 50% 5% 20%;
   }
 
   .texts {
@@ -228,6 +222,6 @@ input[name="radio-input"] {
 
 @media (max-width: 480px) {
   .slider {
-    grid-template-rows: 40% 5% 25% 1px 1px 1px 1px;
+    grid-template-rows: 40% 5% 30%;
   }
 }
