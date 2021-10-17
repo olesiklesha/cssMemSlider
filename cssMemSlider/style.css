@@ -226,14 +226,8 @@ input[name="radio-input"] {
   }
 }
 
-@media (max-width: 580px) {
-  /* .slider-wrapper { 
-    height: 90vh;
-  } */
-}
-
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .slider {
-    grid-template-rows: 40% 5% 20% 1px 1px 1px 1px;
+    grid-template-rows: 40% 5% 25% 1px 1px 1px 1px;
   }
 }
