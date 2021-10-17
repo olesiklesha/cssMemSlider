@@ -197,6 +197,7 @@ input[name="radio-input"] {
   .slider-wrapper {
     width: 90vw;
     height: 90vh;
+    padding: 10px;
   }
 
   .slider {
@@ -212,6 +213,7 @@ input[name="radio-input"] {
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin: 0;
   }
 
   .navigation {
@@ -225,7 +227,13 @@ input[name="radio-input"] {
 }
 
 @media (max-width: 580px) {
-  .slider-wrapper { 
-    height: 80vh;
+  /* .slider-wrapper { 
+    height: 90vh;
+  } */
+}
+
+@media (max-width: 425px) {
+  .slider {
+    grid-template-rows: 40% 5% 20% 1px 1px 1px 1px;
   }
 }
