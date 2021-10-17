@@ -3,15 +3,25 @@
   padding: 0;
 }
 
-.slider {
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  font-weight: 700px;
+}
+
+.slider-wrapper {
   margin: auto;
-  margin-top: 7%;
-  /* padding: 20px; */
-  /* margin-bottom: 5%; */
-  width: 50vw;
-  height: 70vh;
-  background-color: grey;
+  margin-top: 5%;
+  width: 55vw;
+  height: 75vh;
+  padding: 20px;
   border-radius: 10px;
+  background-color: rgba(102, 151, 135, 0.589);
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 72% 25%;
@@ -24,7 +34,6 @@
 .slides-container {
   width: 100%;
   height: 100%;
-  /* margin: 20px; */
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -40,18 +49,14 @@
 
 .slide {
   width: 25%;
-  /* height: 100%; */
+  border-radius: 10px;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
-
-/* .left-side {
-  grid-area: left;
-  display: flex;
-} */
 
 .texts-container {
   overflow: hidden;
@@ -82,7 +87,6 @@
 }
 
 input[name="radio-input"] {
-  /* opacity: 0; */
   visibility: hidden;
   margin-left: -4px;
   width: 1px;
@@ -98,15 +102,15 @@ input[name="radio-input"] {
   display: block;
   width: 15px;
   height: 15px;
-  border: 2px solid rgb(62, 62, 190);
-  background-color:  rgb(62, 62, 190);
+  border: 2px solid rgb(77, 132, 168);
+  background-color:  rgb(77, 132, 168);
   border-radius: 50%;
   box-sizing: border-box;
   transition: all .3s ease-in;
 }
 
 .bullet:hover .bullet-visual {
-  background-color: #fff;
+  background-color: rgb(33, 124, 109);
   border-color: #fff;
 }
 
