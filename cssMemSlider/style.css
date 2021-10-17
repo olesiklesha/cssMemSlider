@@ -17,6 +17,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(102, 151, 135, 0.589);
+  transition: all .3s ease-in-out
 }
 
 .slider {
@@ -82,7 +83,7 @@ body {
   grid-area: nav;
   display: flex;
   height: 25px;
-  justify-self: last baseline;
+  justify-self: flex-end;
   margin-right: 20px;
 }
 
@@ -164,4 +165,47 @@ input[name="radio-input"] {
 }
 #radio4:checked ~ .navigation .b4 {
   background-color: transparent;
+}
+
+@media (max-width: 1440px) {
+  .slider-wrapper {
+    width: 75vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    width: 90vw;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    width: 90vw;
+    height: 75vh;
+  }
+
+  .slider {
+    grid-template-areas: 'slides' 'nav' 'left';
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 0.5fr 2fr;
+  }
+
+  .texts {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .navigation {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .slider-wrapper { 
+    height: 60vh;
+  }
 }
